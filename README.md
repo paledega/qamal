@@ -21,3 +21,13 @@ procyberian-linux/qamal-vm images which is buggy or not but simply hackish and f
 
 * Customize the virtual images for kernel optimization
 * Build custom packages for training, and modifying existing applications
+
+Roadmap
+
+1. **castle in the sky** image series :
+
+   **TOY**: the place where things come together and play together
+
+For that image series called castle in the sky, there will be another branch named "skyborn".
+
+Happy hacking!
