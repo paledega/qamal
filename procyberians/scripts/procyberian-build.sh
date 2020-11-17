@@ -32,6 +32,24 @@ rm -f chroot/root/.bash_history
 rm -rf chroot/var/lib/apt/lists/*
 find chroot/var/log/ -type f | xargs rm -f
 
+cat > chroot/etc/os-release < EOF
+NAME=procyberian
+ID=toy
+ID_LIKE=procyberian
+BUILD_ID=procyberian
+PRETTY_NAME="procyberian GNU/Linux"
+HOME_URL="https://procyberian.masscollabs.com"
+SUPPORT_URL="https://github.com/procyberian-linux"
+BUG_REPORT_URL="https://github.com/procyberian-linux"
+EOF
+
+cat > chroot/etc/lsb_release < EOF
+DISTRIB_ID=procyberian
+DISTRIB_RELEASE=1
+DISTRIB_CODENAME=toy
+DISTRIB_DESCRIPTION="procyberian"
+EOF
+
 mkdir procyberian
 umount -lf -R chroot/* 2>/dev/null
 mksquashfs chroot filesystem.squashfs -comp gzip -wildcards
