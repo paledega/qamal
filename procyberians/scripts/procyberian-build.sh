@@ -43,7 +43,7 @@ SUPPORT_URL="https://github.com/procyberian-linux"
 BUG_REPORT_URL="https://github.com/procyberian-linux"
 EOF
 
-cat > chroot/etc/lsb_release < EOF
+cat > chroot/etc/lsb-release < EOF
 DISTRIB_ID=procyberian
 DISTRIB_RELEASE=1
 DISTRIB_CODENAME=toy
